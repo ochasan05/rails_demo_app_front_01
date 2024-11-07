@@ -33,12 +33,28 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    '@nuxtjs/vuetify'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios'
   ],
+
+  vuetify: {
+    theme: {
+      themes: {
+        light: {
+          primary: '4080BE',
+          info: '4FC1E9',
+          success: '44D69E',
+          warning: 'FEB65E',
+          error: 'FB8678',
+          background: 'f6f6f4'
+        }
+      }
+    }
+  },  
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
